@@ -1,0 +1,33 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3da4d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3da4d.dir/build.make CMakeFiles/cmTC_3da4d.dir/build
+make[1]: se entra en el directorio '/home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3da4d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3da4d.dir/CheckSymbolExists.c.o   -c /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3da4d
+/opt/clion-eap/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3da4d.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_3da4d.dir/CheckSymbolExists.c.o  -o cmTC_3da4d 
+CMakeFiles/cmTC_3da4d.dir/CheckSymbolExists.c.o: En la función `main':
+CheckSymbolExists.c:(.text+0x1b): referencia a `pthread_create' sin definir
+collect2: error: ld devolvió el estado de salida 1
+make[1]: *** [CMakeFiles/cmTC_3da4d.dir/build.make:98: cmTC_3da4d] Error 1
+make[1]: se sale del directorio '/home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:126: cmTC_3da4d/fast] Error 2
+
+File /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+

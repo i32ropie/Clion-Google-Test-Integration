@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Prueba.dir/src/main.cpp.o  -o Prueba 

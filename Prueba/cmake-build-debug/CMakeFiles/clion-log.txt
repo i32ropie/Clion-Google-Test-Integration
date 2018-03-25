@@ -1,0 +1,31 @@
+/opt/clion-eap/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba
+-- The C compiler identification is GNU 7.3.1
+-- The CXX compiler identification is GNU 7.3.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Error: The current CMakeCache.txt directory /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/googletest-download/CMakeCache.txt is different than the directory /home/i32ropie/Dropbox/Proyectos/Prueba/cmake-build-debug/googletest-download where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The current CMakeCache.txt directory /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug/googletest-download/CMakeCache.txt is different than the directory /home/i32ropie/Dropbox/Proyectos/Prueba/cmake-build-debug/googletest-download where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source directory "/home/i32ropie/Dropbox/Proyectos/Prueba/cmake-build-debug/googletest-download" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+make: *** [Makefile:146: cmake_check_build_system] Error 1
+-- Found PythonInterp: /usr/bin/python (found version "3.6.4") 
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Check if compiler accepts -pthread
+-- Check if compiler accepts -pthread - yes
+-- Found Threads: TRUE  
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/i32ropie/Dropbox/Proyectos/Clion-Google-Test-Integration/Prueba/cmake-build-debug
